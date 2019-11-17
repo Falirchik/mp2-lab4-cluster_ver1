@@ -13,5 +13,22 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Razzhivina">
+      <UniqueIdentifier>{9f1cd520-6eb5-43cb-87c3-2e64ef44b464}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Razzhivina\base">
+      <UniqueIdentifier>{ecf2b256-c3bd-491c-ae68-497543acd08b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Razzhivina\base_test">
+      <UniqueIdentifier>{59ff6c16-7e2a-48e0-b7cc-5d5a1ef640f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Razzhivina\gtest">
+      <UniqueIdentifier>{003b15bf-3d3e-4e1c-9cd1-a03ff80a91d0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sample_cluster.cpp">
+      <Filter>Razzhivina\base</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
