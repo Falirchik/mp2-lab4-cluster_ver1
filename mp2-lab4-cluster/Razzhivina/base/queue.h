@@ -14,8 +14,10 @@ class Queue{
 
 public:
 	Queue(int sz = MAX_QUEUE_SIZE):		//конструктор-инициализатор
-		begin(0),end(0),CElem(0),size(sz), PQue (new T[size])
-	{
+		begin(0),end(0),CElem(0), PQue (new T[size]){
+		if ((sz <= 1) || (sz > MAX_QUEUE_SIZE))
+			throw "выход за позволенные размеры очереди";
+		else size = sz;
 		pQue = new T[size + 1];			//доп позиция для различия конца  и начала очереди
 	}
 	Queue(const Queue<T> &_queue) :		//конструктор копирования
