@@ -43,7 +43,13 @@ public:
 		CElem++;						//добавляем в счетчик количества элементов
 	}
 
-	T PutFirst() {						//удаление из очереди
+	T PopLast() {
+		int tmp = end - CElem + size;
+		tmp %= size;
+		return pQue[tmp];
+	}
+
+	T PopFirst() {						//взятие из очереди
 		if (isEmpty())
 			throw ("нет элеметов");
 		int actual = begin;				//запоминаем начало

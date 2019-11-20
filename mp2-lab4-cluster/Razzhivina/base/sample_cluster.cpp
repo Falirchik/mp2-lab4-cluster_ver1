@@ -10,12 +10,21 @@ int main() {
 	setlocale(LC_CTYPE, "Russian");
 
 	int tact,
-		cpu;
+		_cpu;
 
 	srand(time(0));
+
+	cout << "¬ведите количество процессоров: \t";
+	cin >> _cpu;
+	
 	cout << "¬ведите количество тактов: \t";
 	cin >> tact;
-	cout << "¬ведите количество процессоров: \t";
-	cin >> cpu;
+	
 
+	Cluster cl(_cpu);
+	cl.StartCluster(tact);
+	cl.Print;
+
+	system("pause");
+	return 0;
 }
